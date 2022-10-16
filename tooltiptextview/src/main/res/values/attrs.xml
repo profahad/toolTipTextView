@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ToolTipTextView">
+        <attr name="title" format="string" />
+        <attr name="titleColor" format="color" />
+        <attr name="titleFontSize" format="dimension" />
+        <attr name="toolTipText" format="string" />
+        <attr name="toolTipBackgroundColor" format="color" />
+        <attr name="toolTipTextColor" format="color" />
+        <attr name="toolTipImageViewSize" format="dimension" />
+        <attr name="toolTipImage" format="reference" />
+        <attr name="android:fontFamily" />
+    </declare-styleable>
+</resources>
