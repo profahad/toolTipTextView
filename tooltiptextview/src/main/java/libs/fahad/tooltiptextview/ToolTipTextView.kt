@@ -1,4 +1,4 @@
-package apps.fahad.libs.tooltiptextview
+package libs.fahad.tooltiptextview
 
 import android.content.Context
 import android.util.AttributeSet
@@ -6,11 +6,20 @@ import android.util.TypedValue
 import android.view.LayoutInflater
 import android.widget.LinearLayout
 import androidx.core.content.res.ResourcesCompat
-import apps.fahad.libs.tooltiptextview.databinding.LayoutToolTipTextViewBinding
 import io.github.douglasjunior.androidSimpleTooltip.SimpleTooltip
 import io.github.douglasjunior.androidSimpleTooltip.SimpleTooltipUtils
+import libs.fahad.tooltiptextview.databinding.LayoutToolTipTextViewBinding
 
 
+/**
+ * Tool tip text view
+ *
+ * @constructor
+ *
+ * @param context
+ * @param attrs
+ * @param defStyleAttr
+ */
 class ToolTipTextView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
@@ -34,6 +43,11 @@ class ToolTipTextView @JvmOverloads constructor(
         initialize(attrs)
     }
 
+    /**
+     * Initialize
+     *
+     * @param attrs
+     */
     private fun initialize(attrs: AttributeSet?) {
         val typedArray = context.obtainStyledAttributes(attrs, R.styleable.ToolTipTextView, 0, 0)
         title = typedArray.getString(R.styleable.ToolTipTextView_title)
@@ -52,6 +66,10 @@ class ToolTipTextView @JvmOverloads constructor(
         setupView()
     }
 
+    /**
+     * Setup view
+     *
+     */
     private fun setupView() {
         binding = LayoutToolTipTextViewBinding.inflate(inflater, this, true)
         with(binding.imageViewTip) {
@@ -82,11 +100,17 @@ class ToolTipTextView @JvmOverloads constructor(
         setupListeners()
     }
 
+    /**
+     * Setup listeners
+     *
+     */
     private fun setupListeners() {
         binding.imageViewTip.setOnClickListener { v ->
             toolTipText?.let {
                 val builder =
                     SimpleTooltip.Builder(context).anchorView(v).text(it).transparentOverlay(true)
+                        .arrowHeight(SimpleTooltipUtils.pxFromDp(10.0f))
+                        .arrowWidth(SimpleTooltipUtils.pxFromDp(15.0f)).animated(true)
                 toolTipBackgroundColor?.let {
                     builder.backgroundColor(it)
                 }
@@ -96,9 +120,6 @@ class ToolTipTextView @JvmOverloads constructor(
                 toolTipTextColor?.let {
                     builder.textColor(it)
                 }
-                builder.arrowHeight(SimpleTooltipUtils.pxFromDp(10.0f))
-                    .arrowWidth(SimpleTooltipUtils.pxFromDp(15.0f))
-                builder.animated(true)
                 builder.build().show()
             }
         }

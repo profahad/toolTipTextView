@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'apps.fahad.libs.tooltiptextview'
+    namespace 'libs.fahad.tooltiptextview'
     compileSdk 33
 
     defaultConfig {
