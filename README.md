@@ -1,7 +1,7 @@
 
 # ToolTipTextView
 
-ToolTipTextView is an customzed textview where you can achieve tool tip and other functionalities without any hessle.
+ToolTipTextView is an customized textview where you can achieve tooltip and other functionalities without any hassle.
 
 
 ## Badges
