@@ -27,7 +27,7 @@ ToolTipTextView is an customzed textview where you can achieve tool tip and othe
 
 ## Screenshots
 
-![App Screenshot](https://github.com/profahad/toolTipTextView/blob/main/demo/Screenshot_1665934533.png?raw=true)
+![App Screenshot ](https://github.com/profahad/toolTipTextView/blob/main/demo/Screenshot_1665934533.png?raw=true=600x200)
 
 
 ## Badges
