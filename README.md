@@ -1,13 +1,10 @@
 
 # ToolTipTextView
 
-ToolTipTextView is an customized textview where you can achieve tooltip and other functionalities without any hassle.
+ToolTipTextView is an customzed textview where you can achieve tool tip and other functionalities without any hessle.
 
 
-## Badges
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-## Usage
+## How to use
 
     <libs.fahad.tooltiptextview.ToolTipTextView
         android:layout_width="0dp"
@@ -27,3 +24,10 @@ ToolTipTextView is an customized textview where you can achieve tooltip and othe
         app:toolTipText="First name be mateched with you CNIC name !"
         app:toolTipTextColor="#FFFFFF" />
 
+
+![Logo](https://github.com/profahad/toolTipTextView/blob/main/demo/Screenshot_1665934533.png?raw=true)
+
+
+## Badges
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
