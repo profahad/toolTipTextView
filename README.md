@@ -25,7 +25,9 @@ ToolTipTextView is an customzed textview where you can achieve tool tip and othe
         app:toolTipTextColor="#FFFFFF" />
 
 
-![Logo](https://github.com/profahad/toolTipTextView/blob/main/demo/Screenshot_1665934533.png?raw=true)
+## Screenshots
+
+![App Screenshot](https://github.com/profahad/toolTipTextView/blob/main/demo/Screenshot_1665934533.png?raw=true)
 
 
 ## Badges
