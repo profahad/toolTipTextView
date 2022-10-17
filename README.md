@@ -15,7 +15,9 @@ allprojects {
 }
 ```
 ```gradle    
-implementation 'libs.fahad.tooltiptextview:package:1.0.0'
+dependencies {
+	implementation 'com.github.profahad:toolTipTextView:Tag'
+}
 ```
 
 ## How to use
