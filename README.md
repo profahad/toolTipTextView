@@ -4,6 +4,12 @@
 ToolTipTextView is an customzed textview where you can achieve tool tip and other functionalities without any hessle.
 
 
+## Installation
+
+```gradle
+implementation 'libs.fahad.tooltiptextview:1.0.0'
+```
+
 ## How to use
 
     <libs.fahad.tooltiptextview.ToolTipTextView
